@@ -25,6 +25,14 @@ The installers are not yet code-signed, so your computer shows a warning the fir
 
 You only need to do this once.
 
+**If macOS says "MyDMX is damaged and can't be opened"**: click **Cancel** (not Move to Trash), make sure MyDMX is in Applications, then open **Terminal** and run:
+
+```bash
+xattr -cr /Applications/MyDMX.app
+```
+
+Then open MyDMX again. (This affected v1.0.2 and earlier; v1.0.3+ shouldn't need it.)
+
 ### Windows
 1. Run `MyDMX.Setup.<version>.exe`.
 2. If you see "Windows protected your PC", click **More info → Run anyway**.
